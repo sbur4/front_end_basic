@@ -1,0 +1,11 @@
+body {
+    padding: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 15px;
+    border: 5px solid dodgerblue;
+    border-radius: 3px;
+}
