@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <title>NASA Yearlong Simulated Mars Mission application form</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+<h1>NASA Yearlong Simulated Mars Mission application form</h1>
+
+<img src="./images/NASA_logo.png" alt="NASA Logo" width="200px">
+
+<p>
+    Mars is calling! NASA is seeking applicants for participation as a crew member during the first one-year analog
+    mission in a habitat to simulate life on a distant world.
+</p>
+
+<p>
+    As NASA ventures farther into the cosmos, the astronaut experience will change. In preparation for the real-life
+    challenges of future missions to Mars, NASA will study how highly motivated individuals respond under the rigor of a
+    long-duration, ground-based simulation.
+</p>
+
+<p>If you are interested, please fill the form bellow:</p>
+
+<form action="" method="post" enctype="multipart/form-data" name="applicant-data">
+    <h2>NASA programm application form</h2>
+
+    <section id="contact-info">
+        <h3>Contact Info</h3>
+
+        <p>
+            <label for="full-name">Full Name: <input type="text" name="full-name" id="full-name"></label>
+        </p>
+
+        <p>
+            <label for="address">Address: <input type="text" name="address" id="address"></label>
+        </p>
+
+        <p>
+            <label for="email">Email: <input type="email" name="email" id="email"></label>
+        </p>
+    </section>
+
+    <section id="about">
+        <h3>About</h3>
+
+        <fieldset>
+            <legend>University Degree</legend>
+            <ul>
+                <li>
+                    <label>
+                        Military
+                        <input type="radio" name="degree" value="military">
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        Technical
+                        <input type="radio" name="degree" value="technical">
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        Student
+                        <input type="radio" name="degree" value="student">
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+
+        <p id="bio-p">
+            <label for="bio">BIO</label>
+            <textarea name="bio" id="bio"></textarea>
+        </p>
+    </section>
+
+    <section id="participation-details">
+        <h3>Participation details</h3>
+
+        <details>
+            <summary>More info</summary>
+            Please, provide information about your preferences. We don't guarantee them, but we will try.
+        </details>
+
+        <p id="uniform-color-p">
+            <label for="uniform-color">Uniform color <input type="color" name="uniform-color" id="uniform-color"></label>
+        </p>
+
+        <p id="preferred-mission-role-p">
+            <label for="preferred-mission-role">Preferred Role in a mission</label>
+            <input type="text" name="preferred-mission-role" id="preferred-mission-role" list="mission-roles">
+            <datalist id="mission-roles">
+                <option value="Pilot">
+                <option value="Doctor">
+                <option value="Scientist">
+                <option value="Experimentator">
+            </datalist>
+        </p>
+    </section>
+
+    <section id="agree-and-submit">
+        <p>
+            <label for="user-agree">
+                <input type="checkbox" name="user-agree" id="user-agree">
+                I agree on terms and conditions.
+            </label>
+        </p>
+
+        <button type="submit">Send you data to NASA</button>
+    </section>
+</form>
+</body>
+</html>

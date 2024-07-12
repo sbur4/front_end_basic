@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    // backToFront('hello', 1);// ohelloo
+    // backToFront('abc', 3);// abcabcabc
+    // backToFront('world', 2);// ldworldld
+    // backToFront('world', 20);// world
+    //
+    // function backToFront(str, count) {
+    //     let result;
+    //
+    //     if (count > str.length) {
+    //         result = str;
+    //     } else {
+    //         const backPart = str.slice(-count);
+    //         result = backPart + str + backPart;
+    //     }
+    //     console.log(result)
+    // }
+
+    // nearest(100, 22, 122); // 122;
+    // nearest(50, 22, 122); // 22;
+    //
+    // function nearest(z, x, y) {
+    //     const diffX = Math.abs(x - z);
+    //     const diffY = Math.abs(y - z);
+    //
+    //     if (diffX < diffY) {
+    //         console.log(x);
+    //     } else {
+    //         console.log(y);
+    //     }
+
+    removeDuplicate([1,2,3,2,3,1,1]); // [1,2,3]
+    removeDuplicate(['a', 1, '2', 'b', 1, '2', 'b']); // ['a', 1, '2', 'b']
+
+    function removeDuplicate(arr){
+        const result = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            if (result.indexOf(arr[i]) === -1) {
+                result.push(arr[i]);
+            }
+        }
+
+        console.log(result);
+    }
+</script>
+</html>
